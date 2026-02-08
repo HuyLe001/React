@@ -1,5 +1,5 @@
 import React from "react";
-import 'D:/React_Frontend/add-to-cart/node_modules/bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Home from "./Home";
 import Cart from "./Cart";

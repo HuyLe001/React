@@ -4,14 +4,16 @@ import {useCart} from "react-use-cart";
 const Itemcard = (props) => {
     const {addItem} = useCart();
     return (
-        <div className="col-11 col-md-6 col-lg-4 mx-0 mb-4 px-3">
+        <div className="col-12 col-sm-6 col-lg-4">
             <div className="card p-0 overflow-hidden h-100 shadow">
                 <img src={props.img} className="card-img-top img-fluid" alt={props.title} />
-                <div className="card-body text-center">
-                    <h5 className="card-title">{props.title}</h5>
-                    <p className="card-text">{props.desc}</p>
-                    <p className="card-text fw-bold">${props.price}</p>
-                    <button className="btn btn-success" onClick={() => addItem(props.item)}>Add to Cart</button>
+                <div className="card-body text-center d-flex flex-column">
+                    <h5 className="card-title mb-2">{props.title}</h5>
+                    <p className="card-text text-muted mb-3">{props.desc}</p>
+                    <p className="price-tag mb-3">${props.price}</p>
+                    <button className="btn btn-success mt-auto" onClick={() => addItem(props.item)}>
+                        <span>🛒</span> Add to Cart
+                    </button>
                 </div>
             </div>
         </div>

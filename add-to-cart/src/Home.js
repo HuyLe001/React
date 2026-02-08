@@ -5,9 +5,12 @@ import data from "./data";
 const Home = () => {
     return (
         <>
-            <h1 className="text-center mt-3">All Items</h1>
-            <section className="py-4 container">
-                <div className="row justify-content-center">
+            <div className="header-section">
+                <h1 className="text-center main-title">Fresh Fruits Collection</h1>
+                <p className="text-center subtitle">Choose from our selection of delicious and healthy fruits</p>
+            </div>
+            <section className="py-4 container products-section">
+                <div className="row justify-content-center g-4">
 
                     {data.productData.map((item) => {
                         return (
